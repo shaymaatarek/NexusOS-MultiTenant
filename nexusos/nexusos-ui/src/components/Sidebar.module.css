@@ -1,0 +1,80 @@
+.sidebar {
+  width: 240px;
+  min-width: 240px;
+  background: var(--bg2);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  box-shadow: var(--shadow2);
+  z-index: 10;
+}
+
+.logoRow {
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logoIcon {
+  width: 32px; height: 32px;
+  background: linear-gradient(135deg, #c9a84c, #e8c97a);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-head); font-weight: 700; color: #0d0f14; font-size: 14px;
+  flex-shrink: 0;
+}
+.logoText { font-family: var(--font-head); font-size: 16px; font-weight: 700; }
+
+.tenantRow {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tenantAvatar {
+  width: 30px; height: 30px; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 12px; flex-shrink: 0;
+}
+.tenantName { font-size: 13px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tenantPlan { font-size: 11px; color: var(--gold); text-transform: capitalize; }
+
+.nav { flex: 1; padding: 12px 0; overflow-y: auto; }
+.navSection {
+  padding: 6px 20px 4px;
+  font-size: 10px; color: var(--text3);
+  text-transform: uppercase; letter-spacing: 1px; font-weight: 600;
+}
+.navItem {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 20px;
+  cursor: pointer;
+  color: var(--text2);
+  border-left: 3px solid transparent;
+  font-size: 13px;
+  transition: all 0.15s;
+}
+.navItem:hover { background: var(--bg3); color: var(--text); }
+.navItem.active { background: var(--bg4); color: var(--gold); border-left-color: var(--gold); }
+.navItem i { font-size: 17px; flex-shrink: 0; }
+.badge {
+  margin-left: auto;
+  background: var(--gold); color: #0d0f14;
+  border-radius: 10px; padding: 1px 7px;
+  font-size: 10px; font-weight: 700;
+}
+
+.footer { padding: 14px 20px; border-top: 1px solid var(--border); }
+.userRow { display: flex; align-items: center; gap: 10px; }
+.userAvatar {
+  width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 12px; flex-shrink: 0;
+}
+.userInfo { flex: 1; min-width: 0; }
+.userName { font-size: 13px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.userRole { font-size: 11px; color: var(--text2); }

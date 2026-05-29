@@ -1,0 +1,72 @@
+.topbar {
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  padding: 0 28px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  box-shadow: var(--shadow);
+}
+.title { font-family: var(--font-head); font-size: 18px; font-weight: 700; }
+.sub   { font-size: 12px; color: var(--text2); }
+.actions { display: flex; align-items: center; gap: 12px; }
+
+/* Theme toggle */
+.themeToggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: 1px solid var(--border2);
+  border-radius: 20px;
+  padding: 5px 10px 5px 6px;
+  cursor: pointer;
+  color: var(--text2);
+  font-size: 12px;
+  font-family: var(--font-body);
+  transition: border-color 0.2s, color 0.2s;
+}
+.themeToggle:hover { border-color: var(--gold); color: var(--text); }
+
+.toggleTrack {
+  width: 36px;
+  height: 20px;
+  border-radius: 10px;
+  position: relative;
+  transition: background 0.3s;
+  flex-shrink: 0;
+}
+.trackDark  { background: #2a2f3f; }
+.trackLight { background: #c9a84c22; border: 1px solid #c9a84c55; }
+
+.toggleThumb {
+  position: absolute;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  transition: left 0.3s, background 0.3s;
+}
+.thumbDark  { left: 2px;  background: #636880; color: #9aa0b4; }
+.thumbLight { left: 16px; background: linear-gradient(135deg, #c9a84c, #e8c97a); color: #0d0f14; }
+
+.toggleLabel { font-size: 12px; font-weight: 500; }
+
+.settingsBtn {
+  width: 34px; height: 34px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  border-radius: var(--r);
+  color: var(--text2);
+  cursor: pointer;
+  font-size: 17px;
+  transition: all 0.2s;
+}
+.settingsBtn:hover { border-color: var(--gold); color: var(--gold); }

@@ -1,0 +1,114 @@
+.hint {
+  font-size: 13px;
+  color: var(--text2);
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.testResult {
+  padding: 10px 14px;
+  border-radius: var(--r);
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.ok   { background: #3ecf8e15; color: var(--green); border: 1px solid #3ecf8e30; }
+.fail { background: #f76a6a15; color: var(--red);   border: 1px solid #f76a6a30; }
+
+.section {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+.sectionTitle {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text2);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 12px;
+}
+
+.endpointList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 220px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.endpoint {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  padding: 6px 8px;
+  background: var(--bg3);
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+.method {
+  font-family: monospace;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  min-width: 44px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.m_get   { background: #4a7ff718; color: var(--blue); }
+.m_post  { background: #3ecf8e18; color: var(--green); }
+.m_put   { background: #c9a84c18; color: var(--gold); }
+.m_patch { background: #9f7afa18; color: var(--purple); }
+.m_del   { background: #f76a6a18; color: var(--red); }
+
+.path {
+  font-family: monospace;
+  font-size: 11px;
+  color: var(--text);
+  min-width: 140px;
+  flex-shrink: 0;
+}
+.desc {
+  font-size: 11px;
+  color: var(--text2);
+  line-height: 1.5;
+}
+
+.envHint {
+  display: block;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  border-radius: var(--r);
+  padding: 10px 14px;
+  font-size: 12px;
+  color: var(--gold2);
+  font-family: monospace;
+  margin-bottom: 8px;
+  word-break: break-all;
+}
+.envNote {
+  font-size: 12px;
+  color: var(--text2);
+  line-height: 1.6;
+}
+.envNote code {
+  background: var(--bg4);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 11px;
+  color: var(--text);
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}

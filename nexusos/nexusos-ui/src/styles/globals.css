@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css');
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+/* ── Dark theme (default) ────────────────────────────── */
+:root, [data-theme="dark"] {
+  --bg:#0d0f14;
+  --bg2:#13161e;
+  --bg3:#1a1e28;
+  --bg4:#222738;
+  --border:#2a2f3f;
+  --border2:#363c50;
+  --gold:#c9a84c;
+  --gold2:#e8c97a;
+  --gold3:#f5e0a0;
+  --text:#e8eaf0;
+  --text2:#9aa0b4;
+  --text3:#636880;
+  --blue:#4a7ff7;
+  --green:#3ecf8e;
+  --red:#f76a6a;
+  --purple:#9f7afa;
+  --shadow: 0 1px 3px rgba(0,0,0,0.4);
+  --shadow2: 0 4px 16px rgba(0,0,0,0.5);
+  --font-head:'Syne', sans-serif;
+  --font-body:'DM Sans', sans-serif;
+  --r:10px;
+  --r2:16px;
+}
+
+/* ── Light theme ─────────────────────────────────────── */
+[data-theme="light"] {
+  --bg:#f0f2f7;
+  --bg2:#ffffff;
+  --bg3:#f5f6fa;
+  --bg4:#eaecf3;
+  --border:#dde0ea;
+  --border2:#c8ccda;
+  --gold:#a07828;
+  --gold2:#b8923a;
+  --gold3:#c9a84c;
+  --text:#1a1d2e;
+  --text2:#4b5068;
+  --text3:#8b90a7;
+  --blue:#2d5fd4;
+  --green:#1f9e6a;
+  --red:#d94444;
+  --purple:#6d4fcf;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow2: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+/* Smooth theme transitions */
+*, *::before, *::after {
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+/* Exclude transitions that would feel sluggish */
+button, a, input, select, [class*="toggle"], [class*="nav"], [class*="bar"], [class*="thumb"] {
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease,
+              opacity 0.15s ease, transform 0.2s ease, left 0.3s ease;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+input, select, textarea {
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  border-radius: var(--r);
+  padding: 10px 14px;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+  box-shadow: var(--shadow);
+}
+input:focus, select:focus, textarea:focus { border-color: var(--gold); }
+select { appearance: none; }
+input:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg2); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }
