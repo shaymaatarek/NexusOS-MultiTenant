@@ -19,9 +19,9 @@ The platform provides:
 
 Architecture
 
-![C4 Context](docs/c4-context.png)
+![C4 Context](Documentations/c4-container.png)
 
-![C4 Container](docs/c4-container.png)
+![C4 Container](Documentations/c4-container.png)
 
 Architecture Style
 The backend follows Clean Architecture principles:
